@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>The Math Game - By Kurrun Behl</title>
+  </head>
+
+  <body>
+
+    <style>
+    body {
+      background-image: url("background.png");
+    }
+    </style>
+
+    <h1 class="sub-title">What Is The Answer?</h1>
+    <h1 class="correct-ans"></h1>
+
+    <div class="main-container">
+    <p class="number-1">0</p><p class="operator"> x <p class="number-2">0 <p class="equals"> =
+    </p>
+
+    <form class="form" action="multiply.html" method="post" onsubmit="return check()">
+    <input class="inputBox" type="text" id="input-box" autofocus>
+    </form>
+
+    <br>
+    <br>
+
+    <div class="buttons">
+    <a href="multiply.html"><button class="new-question-btn" type="button" onclick="refresh()">NEW QUESTION</button></a>
+    <a href="index.html"><button class="go-back-btn" type="button">RETURN HOME</button></a>
+    </div>
+
+    <footer>Developed By Kurrun Behl</footer>
+
+  <script src="multiply.js" charset="utf-8"></script>
+  </body>
+
+</html>

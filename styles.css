@@ -1,0 +1,107 @@
+p {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 5rem;
+}
+
+.main-title {
+  font-size: 4rem;
+  font-family: 'Lobster', cursive;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.sub-title {
+  font-size: 3rem;
+  font-family: 'Lobster', cursive;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.correct-ans {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  text-shadow: 3px 2px 2px black;
+}
+
+.home-buttons {
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  background-color: transparent;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 15px 10px 15px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #31087B;
+  color: white;
+  border: 2px solid white;
+  transition: 0.3s ease;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.inputBox {
+  padding: 10px 10px 10px 20px;
+  margin-left: 50px;
+  font-size: 4.5rem;
+  width: 200px;
+}
+
+.form {
+  display: inline-block;
+}
+
+.number-1 {
+  display: inline;
+  float: center;
+}
+
+.number-2 {
+  display: inline;
+  float: center;
+}
+
+.number-3 {
+  display: inline;
+  float: center;
+}
+
+.number-4 {
+  display: inline;
+  float: center;
+}
+
+.operator {
+  display: inline;
+  float: center;
+}
+
+.equals {
+  display: inline;
+  float: center;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
