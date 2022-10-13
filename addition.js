@@ -6,6 +6,11 @@ randomNumber2 = Math.floor(randomNumber2 * 30) + 1;
 
 document.querySelector(".number-1").innerHTML = (randomNumber1);
 document.querySelector(".number-2").innerHTML = (randomNumber2);
+var defaultEmoj = document.getElementById("defaultEmoji");
+var incorrectEmoj = document.querySelector(".incorrect-emoji");
+var correctEmoj = document.querySelector(".correct-emoji");
+incorrectEmoj.style.display = 'none';
+correctEmoj.style.display = 'none';
 
 function check() {
 
@@ -14,9 +19,17 @@ function check() {
   let x = document.getElementById("input-box").value;
   if (x != "" && x == randomNumber1 + randomNumber2) {
       document.querySelector(".sub-title").innerHTML = "Correct.";
+      correctEmoj.style.display = 'block';
+      defaultEmoj.style.display = 'none';
+      var audio = new Audio('correct-sound-effect.mp3');
+      audio.play();
       return false;
   } else {
       document.querySelector(".sub-title").innerHTML = "Incorrect. The Answer Is " + sum + ".";
+      incorrectEmoj.style.display = 'block';
+      defaultEmoj.style.display = 'none';
+      var audio = new Audio('incorrect-sound-effect.mp3');
+      audio.play();
       return false;
   }
 }

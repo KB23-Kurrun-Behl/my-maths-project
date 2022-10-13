@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>The Math Game - By Kurrun Behl</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/66ea77019f.js" crossorigin="anonymous"></script>
+  <!-- Scroll Animation Stylesheet -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>The Math Game</title>
+</head>
 
-  <body>
+<body>
 
-    <style>
+  <!-- Implement a score! Create var holding score, increment this each time answer is correct and end the game once one is wrong -->
+
+  <section id="main-container">
+
+  <div class="main-title-border" data-aos="fade-down">
+    <h1 class="main-title">MyMaths!</h1>
+  </div>
+
+  <div class="home-buttons">
+    <a href="addition.html"><img class="icon" src="images/addition.png" /></a>
+    <a href="multiply.html"><img class="icon" src="images/multiplication.png" /></a>
+    <a href="subtract.html"><img class="icon" src="images/subtraction.png" /></a>
+    <a href="division.html"><img class="icon" src="images/division.png" /></a>
+  </div>
+
+  <footer>In Development By Kurrun Behl</footer>
+
+  </section>
+
+  <style>
     body {
-      background-image: url("background.png");
+      background-image: url("images/background-two.png");
     }
-    </style>
+  </style>
 
-    <div class="main-title-border">
-    <h1 class="main-title">The Math Game</h1>
-    </div>
-
-    <div class="home-buttons">
-        <a href="addition.html"><button type="button">ADDITION</button></a>
-        <!-- <a href="subtract.html"><button class="subtraction" type="button">Subtraction</button></a> -->
-        <a href="multiply.html"><button type="button">MULTIPLICATION</button></a>
-        <button class="division" type="button">MORE COMING SOON</button>
-    </div>
-
-    <footer>Developed By Kurrun Behl</footer>
+  <!-- Required Scroll Animation JavaScript -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 2000
+    });
+  </script>
 
   <script src="main.js" charset="utf-8"></script>
-  </body>
+</body>
 
 </html>

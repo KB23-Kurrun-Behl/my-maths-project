@@ -1,3 +1,13 @@
+@keyframes bounceUp {
+  from {
+    padding-bottom: 0;
+  }
+
+  to {
+    padding-bottom: 20px;
+  }
+}
+
 p {
   color: white;
   font-family: 'Lato', sans-serif;
@@ -5,19 +15,45 @@ p {
 }
 
 .main-title {
-  font-size: 4rem;
-  font-family: 'Lobster', cursive;
+  font-size: 5.5rem;
+  font-family: 'Passion One', cursive;
+  font-weight: 1;
   color: white;
   text-align: center;
   padding-top: 100px;
 }
 
+.confetti {
+  position: absolute;
+  width: 50%;
+  left: 330px;
+  bottom: 30px;
+  z-index: -5;
+}
+
+.city-one {
+  width: 380px;
+  position: absolute;
+  left: 25px;
+  top: 269px;
+  z-index: -5;
+}
+
+.city-two {
+  width: 380px;
+  position: absolute;
+  left: 969px;
+  top: 269px;
+  z-index: -5;
+}
+
 .sub-title {
-  font-size: 3rem;
-  font-family: 'Lobster', cursive;
+  font-size: 5rem;
+  font-family: 'Passion One', cursive;
+  font-weight: 1;
   color: white;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 .correct-ans {
@@ -36,10 +72,33 @@ p {
   margin-top: 50px;
 }
 
+.back-home-btn {
+  text-align: center;
+}
+
+.icon {
+  padding-left: 2px;
+  width: 70px;
+  transition: 0.3s ease;
+}
+
+.icon:hover {
+  animation: bounceUp 0.3s;
+  padding-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.fa-plus {
+  font-size: 1.8rem;
+}
+
+.fa-xmark {
+  font-size: 1.8rem;
+}
+
 button {
   background-color: transparent;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  font-family: sans-serif;
   color: white;
   border: 2px solid white;
   padding: 10px 15px 10px 15px;
@@ -47,7 +106,7 @@ button {
 }
 
 button:hover {
-  background-color: #31087B;
+  background-color: purple;
   color: white;
   border: 2px solid white;
   transition: 0.3s ease;
@@ -59,9 +118,37 @@ button:hover {
 
 .inputBox {
   padding: 10px 10px 10px 20px;
-  margin-left: 50px;
+  margin-left: 10px;
   font-size: 4.5rem;
   width: 200px;
+}
+
+.go-back-btn {
+  margin-left: 10px;
+}
+
+.default-emoji {
+  float: left;
+  position: absolute;
+  left: 10px;
+  top: 520px;
+  width: 120px;
+}
+
+.incorrect-emoji {
+  float: left;
+  position: absolute;
+  left: 10px;
+  top: 520px;
+  width: 120px;
+}
+
+.correct-emoji {
+  float: left;
+  position: absolute;
+  left: 10px;
+  top: 520px;
+  width: 120px;
 }
 
 .form {
@@ -71,31 +158,37 @@ button:hover {
 .number-1 {
   display: inline;
   float: center;
+  font-family: 'Passion One', cursive;
 }
 
 .number-2 {
   display: inline;
   float: center;
+  font-family: 'Passion One', cursive;
 }
 
 .number-3 {
   display: inline;
   float: center;
+  font-family: 'Passion One', cursive;
 }
 
 .number-4 {
   display: inline;
   float: center;
+  font-family: 'Passion One', cursive;
 }
 
 .operator {
   display: inline;
   float: center;
+  font-family: 'Passion One', cursive;
 }
 
 .equals {
   display: inline;
   float: center;
+  font-family: 'Passion One', cursive;
 }
 
 footer {

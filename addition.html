@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>The Math Game - By Kurrun Behl</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/66ea77019f.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>The Math Game</title>
+</head>
 
-  <body>
+<body>
 
-    <style>
+  <style>
     body {
-      background-image: url("background.png");
+      background-image: url("images/background-two.png");
     }
-    </style>
+  </style>
 
-    <h1 class="sub-title">What Is The Answer?</h1>
-    <h1 class="correct-ans"></h1>
+  <h1 class="sub-title">What Is The Answer?</h1>
+  <h1 class="correct-ans"></h1>
 
-    <div class="main-container">
-    <p class="number-1">0</p><p class="operator"> + <p class="number-2">0 <p class="equals"> =
+  <div class="main-container">
+    <p class="number-1">0
+    <p class="operator"> +
+    <p class="number-2">0
+    <p class="equals"> =
     </p>
 
     <form class="form" action="addition.html" method="post" onsubmit="return check()">
-    <input class="inputBox" type="text" id="input-box" autofocus>
+      <input class="inputBox" type="text" id="input-box" autofocus>
     </form>
 
     <br>
     <br>
 
     <div class="buttons">
-    <a href="addition.html"><button class="new-question-btn" type="button" onclick="refresh()">NEW QUESTION</button></a>
-    <a href="index.html"><button class="go-back-btn" type="button">RETURN HOME</button></a>
+      <a href="addition.html"><button class="new-question-btn" type="button" onclick="refresh()">Next Question <i class="fa-solid fa-arrow-right"></i></button></a>
+      <a href="index.html"><button class="go-back-btn" type="button">Back To Menu <i class="fa-solid fa-house"></i></button></a>
     </div>
 
-    <footer>Developed By Kurrun Behl</footer>
+    <footer>In Development By Kurrun Behl</footer>
 
-  <script src="addition.js" charset="utf-8"></script>
-  </body>
+    <img class="default-emoji" src="https://media3.giphy.com/media/USUIWSteF8DJoc5Snd/giphy.gif" id="defaultEmoji">
+    <img class="incorrect-emoji" src="https://media3.giphy.com/media/kfS15Gnvf9UhkwafJn/giphy.gif?cid=ecf05e47222jpxbtv12meh4imv7ktzz7cm7ax2l6ce7o6qkd&rid=giphy.gif&ct=g">
+    <img class="correct-emoji" src="https://media3.giphy.com/media/QWvra259h4LCvdJnxP/giphy.gif">
+
+    <script src="addition.js" charset="utf-8"></script>
+</body>
 
 </html>
